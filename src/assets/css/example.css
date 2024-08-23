@@ -1,0 +1,134 @@
+body {
+  background-color: #effafa;
+  font-family: "League Spartan";
+  font-optical-sizing: auto;
+  color: #2b3939;
+}
+
+.header {
+  background: url("./img/headerbg.svg") #63baba center center repeat-x;
+  height: 156px;
+}
+
+.jobs {
+  max-width: 1100px;
+  margin-inline: auto;
+  display: grid;
+  gap: 24px;
+  padding-block: 76px;
+}
+
+.jobItem {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 30px 40px;
+  border-radius: 5px;
+  box-shadow: 0px 15px 20px -5px #0d718226;
+  background-color: #fff;
+
+  & > * {
+    width: calc(50% - 20px);
+  }
+
+  a {
+    color: #5ca5a5;
+  }
+
+  h3 {
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 12px;
+  }
+
+  h4 {
+    font-size: 18px;
+    line-height: normal;
+    margin-bottom: 7px;
+
+    span {
+      margin-left: 5px;
+    }
+  }
+}
+
+.jobTags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: center;
+  gap: 16px;
+
+  a {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.1230769231915474px;
+    text-align: left;
+    background-color: #5ca5a510;
+    padding: 4px 9px;
+    border-radius: 4px;
+  }
+}
+
+/* logo yu seçiyorum */
+.jobDetails a:has(img) {
+  float: left;
+  margin-right: 24px;
+}
+
+.new,
+.featured {
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #5ca5a5;
+  font-size: 14px;
+  line-height: 14px;
+  border-radius: 12px;
+  padding: 4px 8px;
+}
+
+.featured {
+  background-color: #2b3939;
+}
+
+.featuredJob {
+  border-left: 5px solid #5ca5a5;
+  padding-left: 35px;
+}
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  box-shadow: 0px 15px 20px -5px #0d718226;
+
+  .filterContent {
+    display: flex;
+    gap: 16px;
+  }
+
+  .textFilter {
+    display: flex;
+
+    button {
+      border: none;
+      background-color: #5ca5a5;
+      color: white;
+      padding: 9px;
+    }
+
+    p {
+      display: flex;
+      align-items: center;
+      background-color: #5ca5a510;
+    }
+  }
+}
+
+.fullDelete {
+  border: none;
+  background-color: transparent;
+  color: #5ca5a5;
+}
