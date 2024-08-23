@@ -103,6 +103,12 @@ body {
   justify-content: space-between;
   gap: 16px;
   box-shadow: 0px 15px 20px -5px #0d718226;
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  bottom: 20px;
+  padding: 20px;
+  background-color: #ffffff;
 
   .filterContent {
     display: flex;
@@ -117,12 +123,19 @@ body {
       background-color: #5ca5a5;
       color: white;
       padding: 9px;
+      cursor: pointer;
     }
 
     p {
       display: flex;
       align-items: center;
       background-color: #5ca5a510;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: -0.1230769231915474px;
+      text-align: left;
+      color: #5ca5a5;
     }
   }
 }
@@ -131,4 +144,5 @@ body {
   border: none;
   background-color: transparent;
   color: #5ca5a5;
+  cursor: pointer;
 }
