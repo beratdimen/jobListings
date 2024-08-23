@@ -180,21 +180,22 @@ function App() {
 
 function ListingFilter({ filter, deleteFilter, fullDelete }) {
   return (
-    <div className="filter">
-      <div className="filterContent">
-        {filter.map((x, i) => (
-          <div className="textFilter">
-            <p key={i}>{x}</p>
-            <button onClick={() => deleteFilter(x)}>X</button>
-          </div>
-        ))}
-      </div>
-      {filter.length > 0 && (
+    filter.length > 0 && (
+      <div className="filter">
+        <div className="filterContent">
+          {filter.map((x, i) => (
+            <div className="textFilter">
+              <p key={i}>{x}</p>
+              <button onClick={() => deleteFilter(x)}>X</button>
+            </div>
+          ))}
+        </div>
+
         <button className="fullDelete" onClick={() => fullDelete()}>
           clear
         </button>
-      )}
-    </div>
+      </div>
+    )
   );
 }
 
